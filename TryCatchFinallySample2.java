@@ -5,6 +5,7 @@ public class TryCatchFinallySample2{
         Logger logger = Logger.getLogger(TryCatchFinallySample.class.getName());
         ConsoleHandler ch = new ConsoleHandler();
         logger.addHandler(ch);
+        logger.setLevel(Level.ALL);
         try{
             logger.warning("try");
             if(args[0].equals("test")){
