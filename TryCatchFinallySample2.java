@@ -1,8 +1,8 @@
 import java.util.logging.*;
 
 public class TryCatchFinallySample2{
+    private static Logger logger = Logger.getLogger(TryCatchFinallySample2.class.getName());
     public static void main(String[] args){
-        Logger logger = Logger.getLogger(TryCatchFinallySample.class.getName());
         ConsoleHandler ch = new ConsoleHandler();
         logger.addHandler(ch);
         logger.setLevel(Level.ALL);
